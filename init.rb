@@ -7,6 +7,6 @@ Redmine::Plugin.register :redmine_wiki_template do
   author 'Paolo Freuli'
   description 'Very simple plugin to add some template management to Redmine Wiki'
   version '0.0.1'
-  #url 'http://example.com/path/to/plugin'
+  url 'http://github.com/wuatanabe/redmine_wiki_template'
   #author_url 'http://example.com/about'
 end
