@@ -12,10 +12,10 @@ module RedmineWikiTemplateHelper
  
     
     def initial_page_content_with_prefix(page)
-	    
-      if  !page.title.ends_with?("___TEMPLATE___") and page.title.split("___").size > 1
-		w = WikiPage.find_by_title(page.title.split("___")[0]+"___TEMPLATE___")
-		w.content.text if w!= nil
+      template_identifier ="___TEMPLATE___"
+      w = WikiPage.find_by_title(page.title.split(template_identifier)[0]+template_identifier)      
+      if  !page.title.ends_with?(template_identifier) and page.title.split("___").size > 1 and w != nil and w.visible?
+		w.content.text 
       else
 	       initial_page_content_without_prefix(page)
      end
