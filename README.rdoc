@@ -5,20 +5,23 @@ Drop the plugin in yout redmine/vendor/plugins dir
 
 2. Usage
 Create your Template
-Template must have a title compliant with this: 
+
+Template title must follows this format <code>___TEMPLATE___: 
  
   TemplateCode___TEMPLATE___
 
-If you need a Template for Functional Specification you could name it
+Example:
+If you need a Template for Functional Specification you might name it
 
   FunctionalSpecification___TEMPLATE___
 
-3. Save the Template with this name
-4. When you need the Template now you can just create a new wiki page using:
+3. Save the Template with this name.
 
-      FunctionalSpecification___TEMPLATE___title
+4. When you need to create a new Functional Specification you can now load 
+    the FunctionalSpecification___TEMPLATE___ now using:
+
+      FunctionalSpecification___TEMPLATE___real_title
 
 
-Wherever you create the template (i.e. in whatever redmine project)
-if you follow the specified format and if you have the right permissions you 
+If you follow the specified format and if you have the permissions to access the template page
 Redmine will populate the initial page with the template content.
