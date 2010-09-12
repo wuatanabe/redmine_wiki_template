@@ -1,11 +1,8 @@
  
-#require_dependency 'redmine'
 
 module RedmineWikiTemplateHelper
-  def self.included(base) # :nodoc:
-	  puts "x"*1000
+  def self.included(base) 
     base.send(:include, InstanceMethods)
-
     base.class_eval do
       alias_method_chain :initial_page_content, :prefix
     end
@@ -13,15 +10,6 @@ module RedmineWikiTemplateHelper
   
   module InstanceMethods
  
-  
-    
-    # Adds a rates tab to the user administration page
-    #~ def initial_page_content_with_prefix(page)
-     #~ puts page.inspect.to_s
-      #~ tabs = initial_page_content_without_prefix(page)
-      #~ tabs +="#{page.inspect.to_s}èèsdsdsfadsfasdfadsfsdfsd"  if page.title == "Tt"
-      #~ return tabs
-    #~ end
     
     def initial_page_content_with_prefix(page)
 	    
