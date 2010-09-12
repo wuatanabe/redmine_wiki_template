@@ -1,0 +1,24 @@
+= wiki_template
+
+1. Installation
+Drop the plugin in yout redmine/vendor/plugins dir
+
+2. Usage
+Create your Template
+Template must have a title compliant with this: 
+ 
+  TemplateCode___TEMPLATE___
+
+If you need a Template for Functional Specification you could name it
+
+  FunctionalSpecification___TEMPLATE___
+
+3. Save the Template with this name
+4. When you need the Template now you can just create a new wiki page using:
+
+      FunctionalSpecification___TEMPLATE___title
+
+
+Wherever you create the template (i.e. in whatever redmine project)
+if you follow the specified format and if you have the right permissions you 
+Redmine will populate the initial page with the template content.
